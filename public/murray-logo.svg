@@ -1,0 +1,21 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Black background circle -->
+  <circle cx="100" cy="100" r="100" fill="#000000"/>
+  
+  <!-- White M letter -->
+  <path d="M30 60 L30 140 L50 140 L50 85 L75 140 L85 140 L110 85 L110 140 L130 140 L130 60 L105 60 L80 115 L55 60 Z" fill="white"/>
+  
+  <!-- White truck box -->
+  <rect x="140" y="85" width="35" height="25" rx="2" fill="white"/>
+  
+  <!-- Truck cabin -->
+  <rect x="135" y="95" width="10" height="15" rx="1" fill="white"/>
+  
+  <!-- Truck wheels -->
+  <circle cx="150" cy="120" r="6" fill="#000000"/>
+  <circle cx="165" cy="120" r="6" fill="#000000"/>
+  
+  <!-- Wheel centers -->
+  <circle cx="150" cy="120" r="2" fill="white"/>
+  <circle cx="165" cy="120" r="2" fill="white"/>
+</svg>

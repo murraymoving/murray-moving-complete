@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Murray Moving - Professional Moving Services | Chesterfield, NJ</title>
+    <meta name="description" content="Professional moving company serving Chesterfield, NJ and surrounding areas. Full-service moving, cargo van services, junk removal. Free quotes available." />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Murray Moving - Professional Moving Services" />
+    <meta property="og:description" content="Professional moving company serving Chesterfield, NJ and surrounding areas. Full-service moving, cargo van services, junk removal." />
+    <meta property="og:image" content="/favicon-512x512.png" />
+    <meta property="og:url" content="https://murraymoving.com" />
+    <meta property="og:site_name" content="Murray Moving" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Murray Moving - Professional Moving Services" />
+    <meta name="twitter:description" content="Professional moving company serving Chesterfield, NJ and surrounding areas." />
+    <meta name="twitter:image" content="/favicon-512x512.png" />
+    
+    <!-- Structured Data for Business Logo -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Murray Moving",
+      "url": "https://murraymoving.com",
+      "logo": "https://murraymoving.com/favicon-512x512.png",
+      "image": "https://murraymoving.com/favicon-512x512.png",
+      "description": "Professional moving company serving Chesterfield, NJ and surrounding areas",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Chesterfield",
+        "addressRegion": "NJ",
+        "postalCode": "08515",
+        "addressCountry": "US"
+      },
+      "telephone": "+16097244445",
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "New Jersey"
+        }
+      ],
+      "serviceType": [
+        "Moving Services",
+        "Residential Moving",
+        "Commercial Moving", 
+        "Cargo Van Services",
+        "Junk Removal"
+      ]
+    }
+    </script>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- Murray Moving Authentication System -->
+    <script>
+// Simple client-side authentication for Murray Moving Business Dashboard
+window.MURRAY_AUTH = {
+  // Valid credentials for business dashboard
+  VALID_USERNAME: 'Admin_mm',
+  VALID_PASSWORD: 'Gnivom22Murray?',
+  
+  // Check if user is currently authenticated
+  isAuthenticated: function() {
+    return localStorage.getItem('mm_auth') === 'authenticated';
+  },
+  
+  // Attempt to login with provided credentials
+  login: function(username, password) {
+    if (username === this.VALID_USERNAME && password === this.VALID_PASSWORD) {
+      localStorage.setItem('mm_auth', 'authenticated');
+      return { success: true };
+    }
+    return { success: false };
+  },
+  
+  // Logout and clear authentication
+  logout: function() {
+    localStorage.removeItem('mm_auth');
+  }
+};
+
+console.log('Murray Moving authentication system loaded');
+    </script>
+    
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
+    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
+  </body>
+</html>
