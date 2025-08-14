@@ -1,0 +1,26 @@
+{
+  "name": "murray-moving-complete",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:frontend && npm run build:functions",
+    "build:frontend": "cd client && npm install && npm run build && cp -r dist/* ../public/",
+    "build:functions": "tsc netlify/functions/api.ts --target es2020 --module es2020 --moduleResolution node --esModuleInterop --outDir netlify/functions/",
+    "dev": "netlify dev",
+    "preview": "netlify dev"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "cors": "^2.8.5",
+    "@neondatabase/serverless": "^0.9.0",
+    "drizzle-orm": "^0.29.0",
+    "zod": "^3.22.0",
+    "ws": "^8.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/express": "^4.17.0",
+    "typescript": "^5.0.0",
+    "netlify-cli": "^17.0.0"
+  }
+}
